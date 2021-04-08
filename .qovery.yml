@@ -1,0 +1,11 @@
+---
+application:
+  name: "antimatter"
+  project: "antimatter"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-antimatter"
+  routes:
+  - application_name: "antimatter"
+    paths:
+    - "/*"
