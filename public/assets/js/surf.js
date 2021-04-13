@@ -4,9 +4,6 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 $ = e => document.getElementById(e) || [];
-
-$("tacolink").href = "https://github.com/Tacosheel/TacoProxy";
-
 //Alloy Default
 
 $('alloyframe').onclick = function() {
@@ -21,7 +18,7 @@ $('alloyframe').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     const origin = btoa(url)
-    frame.src = "https://" + domain + "/prefix/" + origin;
+    frame.src = "https://www." + domain + "/prefix/" + origin;
     frame.style['visibility'] = "visible";
     return false;
 };
@@ -40,7 +37,7 @@ $('alloydefault').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     const origin = btoa(url)
-    window.location.href = "https://" + domain + "/prefix/" + origin;
+    window.location.href = "https://www." + domain + "/prefix/" + origin;
     return false;
 };
 
